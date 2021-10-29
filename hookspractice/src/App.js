@@ -1,11 +1,13 @@
 
 import './App.css';
-import Usestatehook from './components/usestatehook/Usestatehook';
+import Useeffecthook from './components/useeffecthook/Useeffecthook';
+//import Usestatehook from './components/usestatehook/Usestatehook';
 
 function App() {
   return (
     <div className="App">
-      <Usestatehook ></Usestatehook>
+      {/* <Usestatehook ></Usestatehook> */}
+      <Useeffecthook></Useeffecthook>
     </div>
   );
 }
