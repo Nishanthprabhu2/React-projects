@@ -13,9 +13,7 @@ function Useeffecthook() {
     setX(e.clientX);
     setY(e.clientY);
   };
-  const tick = () => {
-    setTime(time + 1);
-  };
+   
   //Tihis runs initially  and then after every render based on the send paremeter passed to conditionally re render
   useEffect(() => {
     document.title = `you clicked ${count} times`;
@@ -31,12 +29,14 @@ function Useeffecthook() {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(tick, 1000);
+    const interval = setInterval(() => {
+        setTime(time + 1);
+      }, 1000);
 
     return () => {
       clearInterval(interval);
     }
-  }, [time, tick]);
+  }, [time]);
 
   return (
     <div>
