@@ -1,10 +1,11 @@
 import React, { useReducer } from "react";
 import "./App.css";
+import usePagination from "./components/myHooks/usePagination";
 // import CompA from "./components/globalstate/CompA";
 // import CompB from "./components/globalstate/CompB";
 // import CompC from "./components/globalstate/CompC";
-import ExampleOne from "./components/userefhook/ExampleOne";
-import HootTimer from "./components/userefhook/HootTimer";
+// import ExampleOne from "./components/userefhook/ExampleOne";
+// import HootTimer from "./components/userefhook/HootTimer";
 // import CounterTwo from './components/usereducer/CounterTwo';
 // import ComponentC from './components/contexthook/ComponentC';
 // import CounterOne from './components/usereducer/CounterOne';
@@ -62,7 +63,9 @@ function App() {
 
       {/* ---------------------USEREF HOOK----------------------- */}
       {/* <ExampleOne /> */}
-      <HootTimer />
+      {/* <HootTimer /> */}
+
+      <usePagination />
     </div>
     // </globalCountContext.Provider>
   );
